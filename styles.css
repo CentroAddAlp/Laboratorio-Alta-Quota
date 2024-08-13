@@ -66,6 +66,32 @@ flex-wrap: wrap;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width:768px) {
+    header img {
+        width: 80%;
+    }
+
+    .map-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    .spazio-extra {
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+
+
 /* Stili per la sezione Contatti */
 form {
     display: flex;
@@ -153,3 +179,4 @@ h2 {
     border: 2px solid #ccc;
     border-radius: 8px;
 }
+
