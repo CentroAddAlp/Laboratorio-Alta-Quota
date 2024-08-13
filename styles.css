@@ -176,20 +176,6 @@ h2 {
 .image.container img {
     max-width: 100%;
     height: auto;
-    width: 300px;
-}
-
-.programma-immagini {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    margin-top:20px;
-}
-
-.programma-immagini img {
-    max-width: 45%;
-    height: auto;
-    border: 2px solid #ccc;
-    border-radius: 8px;
+    width: 500px;
 }
 
