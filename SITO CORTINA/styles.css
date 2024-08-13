@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Sfondo bianco per il corpo della pagina */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header img {
+    width: auto; /* Dimensiona l'immagine del logo */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#programma ul {
+    list-style: none;
+    padding: 0;
+}
+
+#programma ul li {
+    margin: 10px 0;
+}
+
+.galleria {
+    display: flex;
+flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px;
+}
+
+.galleria img {
+    width: 300px;
+    height: auto; 
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Stili per la sezione Contatti */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+}
+
+/* Stili per la sezione Come Raggiungerci */
+.map-container {
+    display: flex;
+    gap: 200px; /* Aumenta lo spazio tra le mappe a circa 20 cm (200px) */
+    flex-wrap: wrap;
+}
+
+.map {
+    flex: 1;
+    max-width: 30%; /* Riduci la larghezza massima a circa un terzo del contenitore */
+    box-sizing: border-box;
+}
+
+.map iframe {
+    width: 100%; /* Imposta la larghezza al 100% del contenitore */
+    height: 200px; /* Mantieni l'altezza delle mappe */
+    border: 0;
+}
+
+/* Stili per il footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Spaziatura per il testo della sezione "Laboratorio Alta Quota" */ #home p {
+    line-height: 1.6; /* Questo regola l'interlinea (spaziatura verticale tra le righe di testo) */
+    margin-bottom: 20px; /* Questo aggiunge spazio extra sotto ogni paragrafo */ }
+
+#home {
+    letter-spacing: 0.5px; /* Aggiunge spaziatura tra le lettere */
+    word-spacing: 2px; /* Aggiunge spaziatura tra le parole */ }
+
+
+.spazio-extra {
+    margin-bottom: 60px; /* Spazio extra tra i paragrafi */
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+ 
+#programma {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.programma-immagini {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top:20px;
+}
+
+.programma-immagini img {
+    max-width: 45%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
