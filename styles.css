@@ -176,6 +176,7 @@ h2 {
 .image.container img {
     max-width: 100%;
     height: auto;
+    width: 300px;
 }
 
 .programma-immagini {
