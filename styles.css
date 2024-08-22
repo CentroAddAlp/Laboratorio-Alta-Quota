@@ -68,7 +68,7 @@ flex-wrap: wrap;
 
 @media (max-width:768px) {
     header img {
-        width: 80%;
+        width: 100%;
     }
 
     .map-container {
@@ -79,6 +79,10 @@ flex-wrap: wrap;
     .gallery img {
         width: 100%;
         height: auto;
+    }
+
+    .video-container {
+        padding-bottom: 56.25%;
     }
 
     .spazio-extra {
@@ -180,13 +184,18 @@ h2 {
 }
 
 .video-container {
-    text-align: center;
+    position: relative;
+    padding-bottom: 56.25;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%
     margin: 20px auto;
-    max-width: 80%;
-    
 }
 
 .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
