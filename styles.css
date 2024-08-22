@@ -243,7 +243,7 @@ text-align: center;
 }
 
 .video-container {
-margin-bottom: 4rem;
+margin-bottom: 6rem;
 position: relative;
 padding-bottom: 56.25%; /* Rapporto 16:9 */
 height: 0;
