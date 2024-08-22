@@ -120,6 +120,25 @@ margin-bottom: 20px; /* Spazio tra le immagini */
 display: block; /* Le immagini vengono visualizzate una sotto l'altra */
 }
 
+/* Contenitore per il video */
+.video-container {
+position: relative;
+padding-bottom: 56.25%; /* Mantiene un rapporto di aspetto 16:9 */
+height: 0;
+overflow: hidden;
+max-width: 100%;
+background: #000; /* Sfondo nero per il contenitore */
+margin: 20px auto; /* Aggiunge spazio sopra e sotto il video e centra il contenitore */
+}
+
+.video-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
 .map-container {
 flex-direction: column; /* Le mappe si dispongono in colonna su schermi piccoli */
 gap: 20px; /* Mantiene lo spazio tra le mappe */
