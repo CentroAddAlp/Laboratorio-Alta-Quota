@@ -13,7 +13,9 @@ header {
 }
 
 header img {
-    width: auto; /* Dimensiona l'immagine del logo */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 nav ul {
@@ -67,20 +69,28 @@ flex-wrap: wrap;
 }
 
 #programma img {
-    max-width: 100%
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    height: auto,
+    margin-bottom: 20px;
 }
 
 @media (max-width:768px) {
+    header img {
+        width: 100%;
+    }
+
     #programma img {
+        width: 100%;
         margin-bottom:20px;
-     }
+    }
 
     .map-container {
         flex-direction: column;
-        gap: 20px;
+    }
+   
+    .map {
+        max-width: 100%;
     }
 
     .gallery img {
