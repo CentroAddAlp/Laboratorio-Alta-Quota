@@ -179,3 +179,19 @@ h2 {
     width: 500px;
 }
 
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+
+.video-container iframe,
+.video-container video {
+    max-width: 100%;
+    width: 480px;
+    height: 270px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
