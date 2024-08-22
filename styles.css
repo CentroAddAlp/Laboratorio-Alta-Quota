@@ -75,42 +75,60 @@ flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
-@media (max-width:768px) {
-    header img {
-        width: 100%;
-    }
-
-    #programma img {
-        width: 100%;
-        margin-bottom:20px;
-    }
-
-    .map-container {
-        flex-direction: column;
-    }
-   
-    .map {
-        max-width: 100%;
-    }
-
-    .gallery img {
-        width: 100%;
-        height: auto;
-    }
-
-    .video-container {
-        padding-bottom: 56.25%;
-    }
-
-    .spazio-extra {
-        margin-bottom: 30px;
-    }
-
-    h2 {
-        margin-bottom: 20px;
-    }
+/* Stili per schermi larghi (PC) */
+@media (min-width: 769px) {
+header img {
+width: auto; /* Dimensione originale su schermi grandi */
+max-width: 50%; /* Riduce la dimensione del logo */
 }
 
+#programma img {
+width: 50%; /* Riduce la dimensione delle immagini del programma */
+height: auto; /* Mantiene le proporzioni */
+margin-bottom: 20px; /* Spazio tra le immagini */
+}
+
+.image-container {
+display: flex;
+flex-direction: row; /* Le immagini si affiancano su schermi larghi */
+justify-content: space-around; /* Distribuisce lo spazio tra le immagini */
+}
+
+.map-container {
+flex-direction: row; /* Le mappe si affiancano su schermi larghi */
+gap: 20px; /* Distanza tra le mappe */
+}
+
+.map {
+max-width: 45%; /* Le mappe occupano circa la metà del contenitore */
+}
+}
+
+/* Stili per schermi piccoli (cellulari) */
+@media (max-width: 768px) {
+header img {
+width: 100%; /* L'immagine del logo occupa tutta la larghezza */
+}
+
+#programma img {
+width: 100%; /* Le immagini del programma occupano tutta la larghezza */
+height: auto; /* Mantiene le proporzioni */
+margin-bottom: 20px; /* Spazio tra le immagini */
+}
+
+.image-container {
+display: block; /* Le immagini vengono visualizzate una sotto l'altra */
+}
+
+.map-container {
+flex-direction: column; /* Le mappe si dispongono in colonna su schermi piccoli */
+gap: 20px; /* Mantiene lo spazio tra le mappe */
+}
+
+.map {
+max-width: 100%; /* Le mappe occupano tutta la larghezza del contenitore */
+}
+}
 
 
 /* Stili per la sezione Contatti */
