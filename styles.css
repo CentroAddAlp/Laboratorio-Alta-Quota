@@ -66,10 +66,17 @@ flex-wrap: wrap;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+#programma img {
+    max-width: 100%
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 @media (max-width:768px) {
-    header img {
-        width: 100%;
-    }
+    #programma img {
+        margin-bottom:20px;
+     }
 
     .map-container {
         flex-direction: column;
@@ -121,20 +128,20 @@ form input[type="email"] {
 /* Stili per la sezione Come Raggiungerci */
 .map-container {
     display: flex;
-    gap: 200px; /* Aumenta lo spazio tra le mappe a circa 20 cm (200px) */
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px; /* Aumenta lo spazio tra le mappe a circa 20 cm (200px) */
+    padding: 0 10px;
 }
 
 .map {
-    flex: 1;
-    max-width: 30%; /* Riduci la larghezza massima a circa un terzo del contenitore */
+    width: 100%;
+    max-width: 100%; /* Riduci la larghezza massima a circa un terzo del contenitore */
     box-sizing: border-box;
 }
 
 .map iframe {
     width: 100%; /* Imposta la larghezza al 100% del contenitore */
-    height: 200px; /* Mantieni l'altezza delle mappe */
-    border: 0;
+    height: 300px; /* Mantieni l'altezza delle mappe */
 }
 
 /* Stili per il footer */
