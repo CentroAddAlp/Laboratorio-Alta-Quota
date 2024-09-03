@@ -231,7 +231,7 @@ h2 {
     margin: 0 auto;
 }
 
-.image.container img {
+.image-container img {
     max-width: 100%;
     height: auto;
     width: 500px;
